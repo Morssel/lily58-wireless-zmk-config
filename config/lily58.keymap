@@ -1,4 +1,4 @@
-ee/*
+/*
  * Copyright (c) 2020 The ZMK Contributors
  *
  * SPDX-License-Identifier: MIT
@@ -8,11 +8,11 @@ ee/*
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
-/ {
+&mt {
+    tapping-term-ms = <400>; // This is the value already set by default
+};
 
-    &mt {
-        tapping-term-ms = <400>; // This is the value already set by default
-    };
+/ {
 
     keymap {
         compatible = "zmk,keymap";
